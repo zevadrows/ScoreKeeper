@@ -12,20 +12,35 @@
 </head>
 
 <body>
-    <div class="pl-5 pr-5">
-        <div class="container d-flex col-4 row justify-content-center mt-2 text-center">
-            <div class="jumbotron col-auto p-2 text-center">
-                <h1><span class="p1Score">0</span> to <span class="p2Score">0</span></h1>
-            </div>
-            <div class="col-12">
-                <p>Playing to: <span class="totalScore">5</span></p>
-            </div>
-            <div class="col-12 mt-2">
-                <button class="p1Button btn btn-primary mr-1">Player 1</button><button class="p2Button btn btn-primary mr-1">Player
-                    2</button><button class="resetButton btn btn-danger">Reset</button>
-            </div>
+
+    <div class="container d-flex row justify-content-center mt-2 text-center">
+        <div class="jumbotron col-auto p-2 text-center">
+            <h1><span class="p1Score">0</span> to <span class="p2Score">0</span></h1>
+        </div>
+        <div class="btn-toolbar col-12 justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-secondary">1</button>
+                  <button type="button" class="btn btn-secondary">2</button>
+                  <button type="button" class="btn btn-secondary">3</button>
+                  <button type="button" class="btn btn-secondary">4</button>                
+                  <button type="button" class="btn btn-secondary bg-success">5</button>
+                  <button type="button" class="btn btn-secondary">6</button>
+                  <button type="button" class="btn btn-secondary">7</button>                
+                  <button type="button" class="btn btn-secondary">8</button>
+                  <button type="button" class="btn btn-secondary">9</button>                
+                  <button type="button" class="btn btn-secondary">10</button>
+                </div>
+              </div>
+        <div class="col-12 mt-2">
+            <p>Playing to: <span class="totalScore">5</span></p>
+        </div>
+        <div class="col-12 mt-2">
+            <button class="p1Button btn btn-primary mr-1">Player 1</button><button
+                class="p2Button btn btn-primary mr-1">Player
+                2</button><button class="resetButton btn btn-danger">Reset</button>
         </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
