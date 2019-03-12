@@ -11,47 +11,53 @@
     <title>ScoreKeeper</title>
 </head>
 
-<body>
+<body class="body">
 
-    <div class="container d-flex row justify-content-center mt-2 text-center">
-        <div class="jumbotron col-auto p-2 text-center">
-            <h1><span class="p1Score">0</span> to <span class="p2Score">0</span></h1>
+    <div class="container col-3 mt-5">
+
+
+        <div class="row scoreBoard rounded-pill mb-3 justify-content-center">
+            <div class="row">                
+                    <h1><span class="p1Score">0</span> to <span class="p2Score">0</span></h1>                
+            </div>
         </div>
-        <div class="btn-toolbar col-12 justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group" role="group" aria-label="First group">
-                  <button type="button" class="btn btn-secondary">1</button>
-                  <button type="button" class="btn btn-secondary">2</button>
-                  <button type="button" class="btn btn-secondary">3</button>
-                  <button type="button" class="btn btn-secondary">4</button>                
-                  <button type="button" class="btn btn-secondary bg-success">5</button>
-                  <button type="button" class="btn btn-secondary">6</button>
-                  <button type="button" class="btn btn-secondary">7</button>                
-                  <button type="button" class="btn btn-secondary">8</button>
-                  <button type="button" class="btn btn-secondary">9</button>                
-                  <button type="button" class="btn btn-secondary">10</button>
-                </div>
-              </div>
-        <div class="col-12 mt-2">
+
+        <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="ttScoreBtn btn btn-secondary tt1">1</button>
+                <button type="button" class="ttScoreBtn btn btn-secondary tt2">2</button>
+                <button type="button" class="ttScoreBtn btn btn-secondary tt3">3</button>
+                <button type="button" class="ttScoreBtn btn btn-secondary tt4">4</button>
+                <button type="button" class="ttScoreBtn btn btn-secondary tt5">5</button>
+                <button type="button" class="ttScoreBtn btn btn-secondary tt6">6</button>
+                <button type="button" class="ttScoreBtn btn btn-secondary tt7">7</button>
+                <button type="button" class="ttScoreBtn btn btn-secondary tt8">8</button>
+                <button type="button" class="ttScoreBtn btn btn-secondary tt9">9</button>
+                <button type="button" class="ttScoreBtn btn btn-secondary tt10">10</button>
+            </div>
+        </div>
+        <div class="text-center mt-2">
             <p>Playing to: <span class="totalScore">5</span></p>
         </div>
-        <div class="col-12 mt-2">
-            <button class="p1Button btn btn-primary mr-1">Player 1</button><button
-                class="p2Button btn btn-primary mr-1">Player
-                2</button><button class="resetButton btn btn-danger">Reset</button>
+        <div class="row justify-content-center m-2">
+            <button class="p1Button btn btn-primary m-1">Player 1</button><button
+                class="p2Button btn btn-primary m-1">Player
+                2</button><button class="resetButton btn btn-danger m-1">Reset</button>
         </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="app.js"></script>
     </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="app.js"></script>
 </body>
 
 </html>

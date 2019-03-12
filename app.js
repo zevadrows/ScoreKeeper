@@ -10,6 +10,8 @@ var p1Score = 0;
 var p2Score = 0;
 var gameOver = false;
 
+var ttScoreButtons = document.querySelectorAll("ttScoreBtn")
+
 
 
 p1btt.addEventListener("click", function () {
