@@ -5,12 +5,41 @@ var p2Display = document.querySelector(".p2Score");
 var ttScore = document.querySelector(".totalScore");
 var reset = document.querySelector(".resetButton");
 
+//buttons
+var ttScoreButtons = document.getElementsByClassName("ttScoreBtn");
+
+var button1 = document.querySelector("#btn1");
+var button2 = document.querySelector("#btn2");
+var button3 = document.querySelector("#btn3");
+var button4 = document.querySelector("#btn4");
+var button5 = document.querySelector("#btn5");
+var button6 = document.querySelector("#btn6");
+var button7 = document.querySelector("#btn7");
+var button8 = document.querySelector("#btn8");
+var button9 = document.querySelector("#btn9");
+var button10 = document.querySelector("#btn10");
+//end Buttons
+
 var totalScore = 5;
 var p1Score = 0;
 var p2Score = 0;
 var gameOver = false;
 
-var ttScoreButtons = document.querySelectorAll("ttScoreBtn")
+
+button1.addEventListener("click", scoreClick(1));
+button2.addEventListener("click", scoreClick(2));
+button3.addEventListener("click", scoreClick(3));
+button4.addEventListener("click", scoreClick(4));
+button5.addEventListener("click", scoreClick(5));
+button6.addEventListener("click", scoreClick(6));
+button7.addEventListener("click", scoreClick(7));
+button8.addEventListener("click", scoreClick(8));
+button9.addEventListener("click", scoreClick(9));
+button10.addEventListener("click", scoreClick(10));
+
+function scoreClick(nBtn){
+    totalScore = nBtn;
+}
 
 
 
