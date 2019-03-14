@@ -4,3 +4,11 @@
 .body {
     background-color: #f1e0ff;
 }
+.playingTo {
+    font-family: 'Sniglet', cursive;
+}
+.totalScore {
+    font-size: 1.2em;
+    color: #25ddc2;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.1)
+}

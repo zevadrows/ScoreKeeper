@@ -26,19 +26,20 @@ var p2Score = 0;
 var gameOver = false;
 
 
-button1.addEventListener("click", scoreClick(1));
-button2.addEventListener("click", scoreClick(2));
-button3.addEventListener("click", scoreClick(3));
-button4.addEventListener("click", scoreClick(4));
-button5.addEventListener("click", scoreClick(5));
-button6.addEventListener("click", scoreClick(6));
-button7.addEventListener("click", scoreClick(7));
-button8.addEventListener("click", scoreClick(8));
-button9.addEventListener("click", scoreClick(9));
-button10.addEventListener("click", scoreClick(10));
+button1.addEventListener("click", function(){ scoreClick(1)});
+button2.addEventListener("click", function(){ scoreClick(2)});
+button3.addEventListener("click", function(){ scoreClick(3)});
+button4.addEventListener("click", function(){ scoreClick(4)});
+button5.addEventListener("click", function(){ scoreClick(5)});
+button6.addEventListener("click", function(){ scoreClick(6)});
+button7.addEventListener("click", function(){ scoreClick(7)});
+button8.addEventListener("click", function(){ scoreClick(8)});
+button9.addEventListener("click", function(){ scoreClick(9)});
+button10.addEventListener("click", function(){ scoreClick(10)});
 
 function scoreClick(nBtn){
     totalScore = nBtn;
+    ttScore.textContent = nBtn;
 }
 
 
