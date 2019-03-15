@@ -4,6 +4,7 @@ var p1Display = document.querySelector(".p1Score");
 var p2Display = document.querySelector(".p2Score");
 var ttScore = document.querySelector(".totalScore");
 var reset = document.querySelector(".resetButton");
+var numberInput = document.querySelector("input");
 
 //buttons
 var ttScoreButtons = document.getElementsByClassName("ttScoreBtn");
@@ -42,7 +43,10 @@ function scoreClick(nBtn){
     ttScore.textContent = nBtn;
 }
 
-
+numberInput.addEventListener("change", function(){
+    totalScore = numberInput.value;
+    ttScore.textContent = numberInput.value;
+})
 
 p1btt.addEventListener("click", function () {
     if (!gameOver) {
