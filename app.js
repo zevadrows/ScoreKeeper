@@ -26,7 +26,8 @@ var p1Score = 0;
 var p2Score = 0;
 var gameOver = false;
 
-
+//trying 1 event for each button
+/*
 button1.addEventListener("click", function(){ scoreClick(1)});
 button2.addEventListener("click", function(){ scoreClick(2)});
 button3.addEventListener("click", function(){ scoreClick(3)});
@@ -41,6 +42,15 @@ button10.addEventListener("click", function(){ scoreClick(10)});
 function scoreClick(nBtn){
     totalScore = nBtn;
     ttScore.textContent = nBtn;
+}
+*/
+//trying same thing with a for loop
+
+for (var i=0; i<ttScoreButtons.length; i++){
+    ttScoreButtons[i].addEventListener("click", function(){
+        totalScore = this.textContent;
+        ttScore.textContent = this.textContent;
+    });
 }
 
 numberInput.addEventListener("change", function(){
